@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #212d40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navContent {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  color: #e3e4db;
+}
+.icons {
+  width: 22%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 250%;
+}
+.logo {
+  border: 1px solid #e3e4db;
+  padding: 0.5%;
+  font-size: 200%;
+}
+a {
+  color: #e3e4db;
+}

@@ -1,0 +1,167 @@
+import React from 'react';
+import Headshot from './pics/headshot.jpg';
+import CoderHeroes from './pics/coderheros.PNG';
+import Portfolio from './pics/portfolio.PNG';
+import './Home.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+
+function Home() {
+  return (
+    <div className="home">
+      <section>
+        <div className="main">
+          <div className="creator">
+            <h1>creator</h1>
+            <div className="creatorContent">
+              <div className="creatorContent1">
+                <p>figma</p>
+                <p>canva</p>
+                <p>wordpress</p>
+                <p>material ui</p>
+              </div>
+            </div>
+          </div>
+          <div className="selfie">
+            <img className="headshot" src={Headshot} alt="headshot" />
+          </div>
+          <div className="coder">
+            <h1>&#60;coder/&#62;</h1>
+            <div className="coderContent">
+              <div className="coderContent1">
+                <p>react</p>
+                <p>sql</p>
+
+                <p>javascript</p>
+                <p>html/css</p>
+              </div>
+              <div className="coderContent2">
+                <p>git/github</p>
+                <p>typescript</p>
+                <p>node</p>
+                <p>angular</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="bottom">
+          <div className="bottomHeader">
+            <h1>my recents</h1>
+          </div>
+          <div className="bottomContent">
+            <div className="piece1">
+              <ul className="ul">
+                <li>
+                  <i className="">
+                    <a
+                      href="https://github.com/BloomTech-Labs/coder-heroes-be"
+                      target="blank"
+                      rel="noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                  </i>
+                  <i>
+                    <a
+                      href="https://www.coderheroes.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
+                    </a>
+                  </i>
+                </li>
+              </ul>
+              <img className="piece1Img" src={CoderHeroes} alt="coderheroes" />
+              <div className="p1Context">
+                <h2 draggable>Coder Heroes</h2>
+                <p draggable>
+                  During my experience at Bloomtech, I was the assigned the role
+                  of back-end engineer, writing more than 70 Express tests and
+                  building the backend of the login API over the course of a
+                  month of contributing to the project.
+                </p>
+              </div>
+            </div>
+            <div className="piece1">
+              <ul className="ul">
+                <li>
+                  <i className="">
+                    <a
+                      href="https://github.com/CamMeiners"
+                      target="blank"
+                      rel="noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                  </i>
+                  <i>
+                    <a
+                      href="https://www.coderheroes.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
+                    </a>
+                  </i>
+                </li>
+              </ul>
+              <img className="piece1Img" src={CoderHeroes} alt="coderheroes" />
+              <div className="p1Context">
+                <h2 draggable>Coder Heroes</h2>
+                <p draggable>
+                  During my experience at Bloomtech, I was the assigned the role
+                  of back-end engineer, writing more than 70 Express tests and
+                  building the backend of the login API over the course of a
+                  month of contributing to the project.
+                </p>
+              </div>
+            </div>
+            <div className="piece1">
+              <ul className="ul">
+                <li>
+                  <i className="">
+                    <a
+                      href="https://github.com/CamMeiners"
+                      target="blank"
+                      rel="noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                  </i>
+                  <i>
+                    <a
+                      href="https://www.cammeiners.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
+                    </a>
+                  </i>
+                </li>
+              </ul>
+              <img className="piece1Img" src={Portfolio} alt="coderheroes" />
+              <div className="p1Context">
+                <h2 draggable>This Portfolio</h2>
+                <p draggable>
+                  My favorite thing to work on, my portfolio lets me showcase my
+                  own skills, experiences, and projects. It encompasses
+                  everything I am as a developer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default Home;
