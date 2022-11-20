@@ -3,6 +3,8 @@ import Headshot from './pics/headshot.jpg';
 import CoderHeroes from './pics/coderheros.PNG';
 import Portfolio from './pics/portfolio.PNG';
 import './Home.css';
+import Navbar from './Navbar';
+import Footer from './Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithub,
@@ -14,9 +16,10 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 function Home() {
   return (
     <div className="home">
+      <Navbar />
       <section>
         <div className="main">
-          <div className="creator">
+          <div draggable className="creator">
             <h1>creator</h1>
             <div className="creatorContent">
               <div className="creatorContent1">
@@ -27,10 +30,10 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="selfie">
+          <div draggable className="selfie">
             <img className="headshot" src={Headshot} alt="headshot" />
           </div>
-          <div className="coder">
+          <div draggable className="coder">
             <h1>&#60;coder/&#62;</h1>
             <div className="coderContent">
               <div className="coderContent1">
@@ -53,7 +56,7 @@ function Home() {
       <section>
         <div className="bottom">
           <div className="bottomHeader">
-            <h1>my recents</h1>
+            <h1 draggable>my recents</h1>
           </div>
           <div className="bottomContent">
             <div className="piece1">
@@ -124,12 +127,13 @@ function Home() {
                 </p>
               </div>
             </div>
+
             <div className="piece1">
               <ul className="ul">
                 <li>
                   <i className="">
                     <a
-                      href="https://github.com/CamMeiners"
+                      href="https://github.com/CamMeiners/portfolio3"
                       target="blank"
                       rel="noreferrer"
                     >
@@ -147,12 +151,12 @@ function Home() {
                   </i>
                 </li>
               </ul>
-              <img className="piece1Img" src={Portfolio} alt="coderheroes" />
+              <img className="piece1Img" src={Portfolio} alt="portfolio" />
               <div className="p1Context">
                 <h2 draggable>This Portfolio</h2>
                 <p draggable>
-                  My favorite thing to work on, my portfolio lets me showcase my
-                  own skills, experiences, and projects. It encompasses
+                  As my favorite thing to work on, my portfolio lets me showcase
+                  my own skills, experiences, and projects. It encompasses
                   everything I am as a developer.
                 </p>
               </div>
@@ -160,6 +164,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

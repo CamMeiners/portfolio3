@@ -1,5 +1,5 @@
 .home {
-  height: 85.6vh;
+  flex-grow: 1;
 }
 .headshot {
   border-radius: 50%;
@@ -17,7 +17,7 @@
   width: 60%;
 }
 .main h1 {
-  font-size: 300%;
+  font-size: 3.7vh;
 }
 section:first-of-type {
   box-shadow: 0 5px 3px -3px rgb(0, 0, 0, 0.2);
@@ -37,6 +37,7 @@ section:first-of-type {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-size: 1.3vh;
 }
 .creator {
   font-family: 'Roboto Slab', serif;
@@ -45,13 +46,14 @@ section:first-of-type {
   flex-direction: column;
   align-items: center;
   width: 200px;
+  font-size: 1.3vh;
 }
 .coderContent2 p {
   display: flex;
   justify-content: flex-end;
 }
 .bottom {
-  padding-bottom: 8px;
+  margin-bottom: 12vh;
 }
 .bottomHeader {
   font-family: 'Roboto Slab', serif;

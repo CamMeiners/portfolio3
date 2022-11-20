@@ -12,8 +12,12 @@ function Footer() {
     <div className="footer">
       <div className="footContent">
         <div>
-          <h1>about</h1>
-          <h1>contact</h1>
+          <h1>
+            <a href="/about">about</a>
+          </h1>
+          <h1>
+            <a href="/contact">contact</a>
+          </h1>
         </div>
 
         <div className="footerIcons">
