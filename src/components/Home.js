@@ -3,15 +3,9 @@ import Headshot from './pics/headshot.jpg';
 import CoderHeroes from './pics/coderheros.PNG';
 import Portfolio from './pics/portfolio.PNG';
 import './Home.css';
-import Navbar from './Navbar';
-import Footer from './Footer';
 import Starwars from './pics/starwars.PNG';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
