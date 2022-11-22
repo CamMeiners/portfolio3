@@ -7,17 +7,13 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 
-function Footer() {
+function Footer({ page, setPage }) {
   return (
     <div className="footer">
       <div className="footContent">
         <div>
-          <h1>
-            <a href="/about">about</a>
-          </h1>
-          <h1>
-            <a href="/contact">contact</a>
-          </h1>
+          <h1 onClick={() => setPage(2)}>about</h1>
+          <h1 onClick={() => setPage(3)}>contact</h1>
         </div>
 
         <div className="footerIcons">

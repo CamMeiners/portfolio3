@@ -1,6 +1,4 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
 import './About.css';
 import car1 from './pics/cam-car-14.jpg';
 import guys from './pics/guys.jpg';
@@ -9,7 +7,6 @@ import boys2 from './pics/the boys pics-31.jpg';
 function About() {
   return (
     <div className="about">
-      <Navbar />
       <div className="content">
         <div className="story">
           <h1>My Story</h1>
@@ -17,7 +14,7 @@ function About() {
             My interest in technology started when I was young, stemming from my
             father's career in electrical engineering. All things tech
             interested me, from wires to screens and everything inbetween. This
-            brought an interest in video games, and my first peice of tech that
+            brought an interest in video games, and my first piece of tech that
             I owned was an X-Box 360 when I was 13.
           </p>
           <p>
@@ -75,7 +72,6 @@ function About() {
           <img src={boys2} alt="" />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

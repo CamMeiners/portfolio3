@@ -5,6 +5,7 @@ import Portfolio from './pics/portfolio.PNG';
 import './Home.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Starwars from './pics/starwars.PNG';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithub,
@@ -16,7 +17,6 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 function Home() {
   return (
     <div className="home">
-      <Navbar />
       <section>
         <div className="main">
           <div draggable className="creator">
@@ -64,7 +64,7 @@ function Home() {
                 <li>
                   <i className="">
                     <a
-                      href="https://github.com/BloomTech-Labs/coder-heroes-be"
+                      href="https://github.com/CamMeiners/technical-interview"
                       target="blank"
                       rel="noreferrer"
                     >
@@ -73,7 +73,7 @@ function Home() {
                   </i>
                   <i>
                     <a
-                      href="https://www.coderheroes.com/"
+                      href="https://technical-interview.vercel.app/worlds/1"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -82,23 +82,23 @@ function Home() {
                   </i>
                 </li>
               </ul>
-              <img className="piece1Img" src={CoderHeroes} alt="coderheroes" />
+              <img className="piece1Img" src={Starwars} alt="coderheroes" />
               <div className="p1Context">
-                <h2 draggable>Coder Heroes</h2>
+                <h2 draggable>SWAPI App</h2>
                 <p draggable>
-                  During my experience at Bloomtech, I was the assigned the role
-                  of back-end engineer, writing more than 70 Express tests and
-                  building the backend of the login API over the course of a
-                  month of contributing to the project.
+                  I had the opportunity to utilize the widely known Star Wars
+                  API to build a project for a technical interview, honing my
+                  React skills in a professional setting.
                 </p>
               </div>
             </div>
+
             <div className="piece1">
               <ul className="ul">
                 <li>
                   <i className="">
                     <a
-                      href="https://github.com/CamMeiners"
+                      href="https://github.com/BloomTech-Labs/coder-heroes-be"
                       target="blank"
                       rel="noreferrer"
                     >
@@ -164,7 +164,6 @@ function Home() {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

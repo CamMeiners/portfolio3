@@ -1,5 +1,6 @@
 .home {
   flex-grow: 1;
+  animation: fadeIn 1s linear;
 }
 .headshot {
   border-radius: 50%;
@@ -53,7 +54,7 @@ section:first-of-type {
   justify-content: flex-end;
 }
 .bottom {
-  margin-bottom: 12vh;
+  margin-bottom: 11.7vh;
 }
 .bottomHeader {
   font-family: 'Roboto Slab', serif;

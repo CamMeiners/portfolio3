@@ -12,6 +12,9 @@
   width: 50%;
   color: #e3e4db;
 }
+.navContent h1 {
+  cursor: pointer;
+}
 .icons {
   width: 22%;
   display: flex;
