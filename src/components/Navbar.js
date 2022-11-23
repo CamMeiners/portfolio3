@@ -14,13 +14,18 @@ function Navbar({ page, setPage }) {
         <h1 className="logo" draggable="true" onClick={() => setPage(1)}>
           cm
         </h1>
-        <h1 onClick={() => setPage(2)}>about</h1>
-        <h1 onClick={() => setPage(3)}>contact</h1>
+        <h1 className="tab" onClick={() => setPage(2)}>
+          about
+        </h1>
+        <h1 className="tab" onClick={() => setPage(3)}>
+          contact
+        </h1>
         <div className="icons">
           <a
             href="https://www.linkedin.com/in/cameron-meiners-07b271185/"
             target="_blank"
             rel="noopener noreferrer"
+            className="icon"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
@@ -29,6 +34,7 @@ function Navbar({ page, setPage }) {
             href="https://github.com/CamMeiners"
             target="_blank"
             rel="noopener noreferrer"
+            className="icon"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -36,6 +42,7 @@ function Navbar({ page, setPage }) {
             href="https://www.instagram.com/cammeiners/"
             target="_blank"
             rel="noopener noreferrer"
+            className="icon"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>

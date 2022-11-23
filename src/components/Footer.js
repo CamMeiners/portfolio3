@@ -21,6 +21,7 @@ function Footer({ page, setPage }) {
             href="https://www.linkedin.com/in/cameron-meiners-07b271185/"
             target="_blank"
             rel="noopener noreferrer"
+            className="icon"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
@@ -29,6 +30,7 @@ function Footer({ page, setPage }) {
             href="https://github.com/CamMeiners"
             target="_blank"
             rel="noopener noreferrer"
+            className="icon"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -36,6 +38,7 @@ function Footer({ page, setPage }) {
             href="https://www.instagram.com/cammeiners/"
             target="_blank"
             rel="noopener noreferrer"
+            className="icon"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>

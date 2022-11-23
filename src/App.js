@@ -8,13 +8,14 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import Contact from './components/Contact';
+import Logo from './components/pics/logo.PNG';
 function App() {
   const [page, setPage] = useState(1);
   return (
     <div>
       <Helmet>
         <title>Cam's Portfolio</title>
-        <link rel="icon" href={Turtle}></link>
+        <link rel="icon" href={Logo}></link>
       </Helmet>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

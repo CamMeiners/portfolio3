@@ -12,21 +12,36 @@
   width: 50%;
   color: #e3e4db;
 }
-.navContent h1 {
+.tab {
   cursor: pointer;
+  transition: 0.4s;
+  text-decoration-color: transparent;
+}
+.tab:hover {
+  color: white;
+  transition: 0.4s;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.tab:hover::after {
+  text-decoration-color: transparent;
 }
 .icons {
   width: 22%;
   display: flex;
   justify-content: space-between;
   font-size: 250%;
+  transition: 0.4s;
 }
 .logo {
   border: 1px solid #e3e4db;
   padding: 0.5%;
   font-size: 200%;
+  cursor: pointer;
 }
-a {
-  color: #e3e4db;
-  text-decoration: none;
+.icon {
+  transition: 0.4s;
+}
+.icon:hover {
+  color: white;
 }

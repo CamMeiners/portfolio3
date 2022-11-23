@@ -19,14 +19,17 @@
   justify-content: space-between;
   font-size: 300%;
 }
-.logo {
-  border: 1px solid #e3e4db;
-  padding: 0.5%;
-  font-size: 200%;
-}
 a {
   color: #e3e4db;
 }
 .footContent h1 {
   cursor: pointer;
+  transition: 0.4s;
+  text-decoration-color: transparent;
+}
+.footContent h1:hover {
+  color: white;
+  transition: 0.4s;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
