@@ -2,48 +2,48 @@ import React from 'react';
 import Headshot from './pics/headshot.jpg';
 import CoderHeroes from './pics/coderheros.PNG';
 import Portfolio from './pics/portfolio.PNG';
-import './Home.css';
+import './MobileHome.css';
 import Starwars from './pics/starwars.PNG';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
-function Home() {
+function MobileHome() {
   return (
-    <div className="home">
+    <div className="mobileHome">
       <section>
         <div className="main">
-          <div draggable className="creator">
-            <h1>creator</h1>
-            <div className="creatorContent">
-              <div className="creatorContent1">
-                <p>figma</p>
-                <p>canva</p>
-                <p>wordpress</p>
-                <p>material ui</p>
-              </div>
-            </div>
-          </div>
           <div draggable className="selfie">
             <img className="headshot" src={Headshot} alt="headshot" />
           </div>
-          <div draggable className="coder">
-            <h1>&#60;coder/&#62;</h1>
-            <div className="coderContent">
-              <div className="coderContent1">
-                <p>react</p>
-                <p>sql</p>
+        </div>
+      </section>
+      <section className="techStack">
+        <div draggable className="coder">
+          <h1>&#60;coder/&#62;</h1>
+          <div className="coderContent">
+            <div className="coderContent1">
+              <p>react</p>
+              <p>sql</p>
 
-                <p>javascript</p>
-                <p>html/css</p>
-              </div>
-              <div className="coderContent2">
-                <p>git/github</p>
-                <p>typescript</p>
-                <p>node</p>
-                <p>angular</p>
-              </div>
+              <p>javascript</p>
+              <p>html/css</p>
             </div>
+            <div className="coderContent2">
+              <p>git/github</p>
+              <p>typescript</p>
+              <p>node</p>
+              <p>angular</p>
+            </div>
+          </div>
+        </div>
+        <div draggable className="creator">
+          <h1>creator</h1>
+          <div className="creatorContent">
+            <p>figma</p>
+            <p>canva</p>
+            <p>wordpress</p>
+            <p>material ui</p>
           </div>
         </div>
       </section>
@@ -161,4 +161,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default MobileHome;

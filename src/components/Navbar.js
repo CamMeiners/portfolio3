@@ -6,6 +6,7 @@ import {
   faInstagram,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
+import { faWrench } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar({ page, setPage }) {
   return (
@@ -48,6 +49,9 @@ function Navbar({ page, setPage }) {
           </a>
         </div>
       </div>
+      <a href="/widgets" rel="noopener noreferrer" className="widgetsIcon">
+        <FontAwesomeIcon icon={faWrench} />
+      </a>
     </div>
   );
 }

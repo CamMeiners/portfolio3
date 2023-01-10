@@ -45,3 +45,8 @@
 .icon:hover {
   color: white;
 }
+.widgetsIcon {
+  font-size: 200%;
+  position: absolute;
+  right: 100px;
+}

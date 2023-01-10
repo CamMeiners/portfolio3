@@ -1,0 +1,111 @@
+.mobileContact {
+  font-family: 'Roboto Slab', serif;
+}
+.mobileContactForm {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.mobileInfo p {
+  font-size: 1rem;
+  width: 80%;
+  text-align: center;
+}
+.mobileInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vh;
+}
+.mobileInfo h1 {
+  font-size: 3rem;
+}
+.mobileName {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  width: 2rem;
+  margin-top: 1rem;
+}
+.senderInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 36vw;
+  margin-top: 4vh;
+}
+.message {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.mobileContact #form-input-control-phone {
+  height: 1.5rem;
+  font-size: 1rem;
+  width: 15rem;
+  font-family: 'Source Code Pro', monospace;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+.mobileContact #form-input-control-last-name {
+  height: 1.5rem;
+  font-size: 1rem;
+  width: 15rem;
+  font-family: 'Source Code Pro', monospace;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.mobileContact #form-input-control-first-name {
+  height: 1.5rem;
+  font-size: 1rem;
+  width: 15rem;
+  font-family: 'Source Code Pro', monospace;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+.mobileContact #form-input-control-email {
+  height: 1.5rem;
+  font-size: 1rem;
+  width: 15rem;
+  font-family: 'Source Code Pro', monospace;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+.mobileContact #form-textarea-control-opinion {
+  height: 4rem;
+  font-size: 0.9rem;
+  font-family: 'Source Code Pro', monospace;
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 15rem;
+}
+.contactForm p {
+  display: flex;
+  justify-content: left;
+  margin: 0;
+  font-size: 1.8vh;
+}
+.mobileContact Button {
+  font-size: 1rem;
+  width: 10rem;
+  height: 3rem;
+  margin: 1rem 0;
+
+  border-radius: 20px;
+  font-family: 'Roboto Slab', serif;
+  background-color: #212d40;
+  color: #e3e4db;
+
+  transition: ease 0.4s;
+}
+Button:hover {
+  background-color: #e3e4db;
+  color: #212d40;
+}
