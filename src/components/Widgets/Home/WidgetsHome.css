@@ -1,0 +1,39 @@
+.widgetsHome {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.widgetsHome a {
+  text-decoration: underline;
+  color: white;
+}
+.widgetsHome .intro {
+  font-size: 2rem;
+  font-weight: 600;
+  opacity: 0;
+  animation: change 2s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.widgetsHome p {
+  font-size: 1.5rem;
+  opacity: 0;
+  animation: change 2s ease-in-out forwards;
+  animation-delay: 2s;
+}
+.widgetsHome h1 {
+  opacity: 0;
+  animation: change 2s ease-in-out forwards;
+}
+@keyframes change {
+  to {
+    opacity: 1;
+  }
+}

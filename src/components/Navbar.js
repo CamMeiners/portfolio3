@@ -49,9 +49,9 @@ function Navbar({ page, setPage }) {
           </a>
         </div>
       </div>
-      {/* <a href="/widgets" rel="noopener noreferrer" className="widgetsIcon">
+      <a href="/widgets" rel="noopener noreferrer" className="widgetsIcon">
         <FontAwesomeIcon icon={faWrench} />
-      </a> */}
+      </a>
     </div>
   );
 }

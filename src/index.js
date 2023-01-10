@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Widgets from './components/Widgets/Widgets';
+// import IPTracer from './components/Widgets/IPTracer';
+// import TicTacToe from './components/Widgets/TicTacToe';
+// import Triangle from './components/Widgets/Triangle';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/widgets" element={<Widgets />} />
+        {/* <Route path="/widgets/iptracker" element={<IPTracer />} />
+        <Route path="/widgets/tictactoe" element={<TicTacToe />} />
+        <Route path="/widgets/triangle" element={<Triangle />} /> */}
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
