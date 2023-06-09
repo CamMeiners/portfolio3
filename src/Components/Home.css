@@ -1,0 +1,10 @@
+.homeText {
+  color: gray;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: right;
+  position: relative;
+  width: 300px;
+  left: 445px;
+  top: 160px;
+}
