@@ -64,51 +64,44 @@ export default function Project() {
       >
         <div className="projectText">
           <div className="projectHeaders">
-            {projects.map(
-              (p, index) => (
-                // start
-
-                <div key={p.title}>
-                  <div className="projects" onClick={() => toggle(index)}>
-                    <FontAwesomeIcon
-                      icon={faAngleRight}
-                      className={active === index ? 'caretActive' : 'caret'}
-                    />
-                    <h1>{p.title}</h1>
-                  </div>
-
-                  {active === index ? (
-                    <div className="dropdownBox">
-                      <div className="dropdown">
-                        <AnimatePresence mode="wait">
-                          <motion.div
-                            key={p.index}
-                            initial={{ y: 10, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            exit={{ y: -10, opacity: 0 }}
-                            transition={{ duration: 0.2 }}
-                          >
-                            <h1>{p.title}</h1>
-                            <p className="dropDesc">{p.desc}</p>
-                            <p className="dropTech">Techstack: {p.tech}</p>
-                          </motion.div>
-                        </AnimatePresence>
-                      </div>
-                    </div>
-                  ) : null}
-
-                  <div className="details">
-                    <p>{p.date}</p>
-                    <a href={p.github} target="blank">
-                      Github
-                    </a>
-                    {p.live && <a href={p.live}>Live Site</a>}
-                  </div>
+            {projects.map((p, index) => (
+              <div key={p.title}>
+                <div className="projects" onClick={() => toggle(index)}>
+                  <FontAwesomeIcon
+                    icon={faAngleRight}
+                    className={active === index ? 'caretActive' : 'caret'}
+                  />
+                  <h1>{p.title}</h1>
                 </div>
-              )
+                {active === index ? (
+                  <div className="dropdownBox">
+                    <div className="dropdown">
+                      <AnimatePresence mode="wait">
+                        <motion.div
+                          key={p.index}
+                          initial={{ y: 10, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          exit={{ y: -10, opacity: 0 }}
+                          transition={{ duration: 0.2 }}
+                        >
+                          <h1>{p.title}</h1>
+                          <p className="dropDesc">{p.desc}</p>
+                          <p className="dropTech">Techstack: {p.tech}</p>
+                        </motion.div>
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ) : null}
 
-              //end
-            )}
+                <div className="details">
+                  <p>{p.date}</p>
+                  <a href={p.github} target="blank">
+                    Github
+                  </a>
+                  {p.live && <a href={p.live}>Live Site</a>}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </motion.div>
