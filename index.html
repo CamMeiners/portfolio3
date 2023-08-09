@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Gsap Flip</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="name-txt">Cameron Meiners</h1>
+      <h2 class="about-txt">
+        A 22 year old web developer from Salt Lake City, Utah
+      </h2>
+    </div>
+    <div class="projects">
+      <div class="proj">
+        <h1>Coder Heroes</h1>
+        <p>
+          I did backend work for a non profit organization, writing over 70 unit
+          tests in order to maximize end to end testing with an emphasis on test
+          driven development.
+        </p>
+        <p>Techstack: Jest, SQL, JS, Express, Node.js</p>
+        <div>
+          <p>02/2022</p>
+          <a href="https://github.com/BloomTech-Labs/coder-heroes-be">GitHub</a>
+          <a href="https://www.coderheroes.com/">Live Site</a>
+        </div>
+      </div>
+      <div class="proj">
+        <h1>FilmStack</h1>
+        <p>
+          Filmstack aims to help users rate and organize movies. It utilizes the
+          iMDB movie database and allows users to save rankings to their
+          profile.
+        </p>
+        <p>
+          Techstack: TypeScript, HTML/CSS, React, Axios, SQL, Express, Node.js
+        </p>
+        <div>
+          <p>03/2023</p>
+          <a href="https://github.com/CamMeiners/filmstack">GitHub</a>
+        </div>
+      </div>
+      <div class="proj">
+        <h1>Anywhere Fitness</h1>
+        <p>
+          An application done through my schooling, I built the backend user
+          login systems along with my classmates.
+        </p>
+        <p>Techstack: JS, Express, SQL, Axios</p>
+        <div>
+          <p>11/2021</p>
+          <a href="https://github.com/ft-anywhere-fitness-7/back-end">GitHub</a>
+        </div>
+      </div>
+      <div class="proj">
+        <h1>Widgets</h1>
+        <p>
+          This is my playground site, it hosts a few of my smaller bits of code
+          that don't warrant their own full website.
+        </p>
+        <p>Techstack: JS, TS, Axios, HTML/CSS, React</p>
+        <div>
+          <p>06/2023</p>
+          <a href="https://www.cammeiners.com/">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div>
+        <h1>Contact me on my socials</h1>
+      </div>
+      <div class="logos">
+        <button class="btn">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </button>
+        <button class="btn">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </button>
+        <button class="btn">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script src="dist/bundle.js"></script>
+    <canvas class="canvas"></canvas>
+    <script
+      src="https://kit.fontawesome.com/47bb3093c3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+      integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

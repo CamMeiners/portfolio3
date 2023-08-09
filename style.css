@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.details {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.name-txt {
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 75px;
+  right: 20%;
+  bottom: 40%;
+  cursor: default;
+
+  transform: translate(-20%, -40%);
+}
+
+@media screen and (max-width: 1024px) {
+  .name-txt {
+    font-size: 2rem;
+    right: 50%;
+    bottom: 25%;
+    transform: translate(50%, 50%);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+.about-txt {
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 30px;
+  right: 19%;
+  bottom: 40%;
+  transform: translate(-20%, -40%);
+  cursor: default;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-txt {
+    font-size: 1rem;
+    right: 50%;
+    bottom: 25%;
+    transform: translate(50%, 50%);
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
+.projects {
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 18px;
+  right: 60%;
+  bottom: 40%;
+  cursor: default;
+
+  width: 30vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    font-size: 2rem;
+    right: 50%;
+    bottom: 25%;
+    transform: translate(50%, 50%);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+.proj {
+  text-align: center;
+  width: 280px;
+  padding: 20px;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  backdrop-filter: blur(14px);
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px;
+  border-radius: 10px;
+}
+a {
+  text-decoration: underline;
+  color: white;
+}
+#fcf-form {
+  display: block;
+}
+
+.contact {
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 1rem;
+  right: 25%;
+  bottom: 60%;
+  cursor: default;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  backdrop-filter: blur(14px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  height: 20vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    font-size: 2rem;
+    right: 50%;
+    bottom: 25%;
+    transform: translate(50%, 50%);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 40px;
+}
+.btn:hover {
+  cursor: pointer;
+  color: lightgray;
+  transition: 0.2s ease;
+}
+.logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
