@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import Home from './Components/Home';
 import Helmet from 'react-helmet';
-
+import Me from './Components/Me';
 import Project from './Components/Project';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -20,6 +20,7 @@ function App() {
         <div className="items">
           <p onClick={() => setCurrent('home')}>home</p>
           <p onClick={() => setCurrent('project')}>projects</p>
+          <p onClick={() => setCurrent('me')}>about me</p>
         </div>
         <div className="socialIcons">
           <a
@@ -40,7 +41,8 @@ function App() {
         <div className="contentBox">
           <div className="content">
             {(current === 'home' && <Home />) ||
-              (current === 'project' && <Project />)}
+              (current === 'project' && <Project />) ||
+              (current === 'me' && <Me />)}
           </div>
         </div>
       </div>

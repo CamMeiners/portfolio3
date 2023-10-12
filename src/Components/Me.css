@@ -1,0 +1,71 @@
+.meText {
+  color: gray;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: right;
+  width: 400px;
+  left: 350px;
+  position: absolute;
+  top: 0;
+}
+.meParagraph {
+  color: gray;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: right;
+  position: relative;
+  width: 300px;
+  left: 445px;
+  top: 160px;
+}
+.carImg {
+  width: 400px;
+  object-fit: cover;
+  border-radius: 5%;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  box-shadow: 4px 4px 4px gray;
+}
+.downArrow {
+  font-size: 60px;
+  color: gray;
+  position: absolute;
+  top: 460px;
+  left: 210px;
+  rotate: 90deg;
+  transition: ease 0.5s;
+}
+.upArrow {
+  font-size: 60px;
+  left: 210px;
+  color: gray;
+  position: absolute;
+  top: 410px;
+  rotate: -90deg;
+  transition: ease 0.5s;
+}
+.carWrapper {
+  position: absolute;
+  z-index: -1;
+  left: 100px;
+  top: 40px;
+}
+.spotify {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.gameImgs {
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 70px;
+}
+.gameImg {
+  width: 150px;
+  border-radius: 20px;
+  padding: 5px;
+}
