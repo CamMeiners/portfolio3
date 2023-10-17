@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Me.css';
 import Mustang from './mustang.JPG';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import React, { useState } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { useGLTF, Stage, PresentationControls, Text } from '@react-three/drei';
+import { faAngleRight, faEllipsis } from '@fortawesome/free-solid-svg-icons';
+import React, { useState, Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { useGLTF, Stage, PresentationControls } from '@react-three/drei';
 import ThreeDMustang from './mustang10.glb';
 import Cs from './cs2.jpg';
 import Ror from './ror.jpg';
@@ -142,6 +142,7 @@ export default function Me() {
       setCurrent(current + 1);
     }
   }
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -217,13 +218,6 @@ export default function Me() {
             <Games />
           </motion.div>
         )}
-        {/* 
-      
-      <div>What I'm currently listening to</div>
-      <Spotify link="https://open.spotify.com/track/6mFkJmJqdDVQ1REhVfGgd1?si=67873bae01b943e0" />
-
-      <div>What I'm currently watching</div>
-      <div>What I'm currently playing</div> */}
       </motion.div>
     </AnimatePresence>
   );
