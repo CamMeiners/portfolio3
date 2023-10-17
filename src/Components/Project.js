@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Spotify } from 'react-spotify-embed';
 export default function Project() {
   const [active, setActive] = useState(0);
   const projects = [
